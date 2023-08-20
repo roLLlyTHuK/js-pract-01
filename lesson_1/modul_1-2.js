@@ -123,13 +123,39 @@
 //     alert( 'We hope that this page looks ok!' );
 // }
 
-const browser = "fsfa"
-if (browser === 'Edge') {
-  alert( "You've got the Edge!" );
-}
-else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser ===  'Opera') {
-  alert( 'Okay we support these browsers too' );
-}
-else {
-  alert( 'We hope that this page looks ok!' );
-}
+// const browser = "fsfa"
+// if (browser === 'Edge') {
+//   alert( "You've got the Edge!" );
+// }
+// else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser ===  'Opera') {
+//   alert( 'Okay we support these browsers too' );
+// }
+// else {
+//   alert( 'We hope that this page looks ok!' );
+// }
+
+//TODO: № 7 for...of =============================================================
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість
+//аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа.
+
+
+//TODO: № 8 ==============================================================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+
+//TODO: № 9 ==============================================================
+//Напишіть функцію logItems(array), яка приймає
+//масив та використовує цикл for, який для кожного
+//елемента масиву виводитиме повідомлення у форматі
+//<номер елемента> - <значення елемента>
+//Нумерація елементів має починатися з першого.
+//['Джаз', 'Блюз', 'Рок-н-рол', 'Реггі', 'Реп']
+
+
+//TODO: № 10 ==============================================================
+// Функція formatMessage(message, maxLength)
+// приймає рядок (параметр message) і форматує його,
+// якщо довжина перевищує значення параметрі maxLength.
