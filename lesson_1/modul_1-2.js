@@ -83,22 +83,53 @@
 //Напиши функцію findSmallerNumber(numbers)
 //яка шукає найменше число в масиві.
 //Додай перевірку що функція отримує масив
-const numbers = [2, 5, 35, 56, 12, 1, 7, 80, 3];
-const number = 3;
+// const numbers = [2, 5, 35, 56, 12, 1, 7, 80, 3];
+// const number = 3;
 
-function findSmallerNumber(array) {
-  if (!Array.isArray(array)) {
-  return "Введене значення не є масив"
+// function findSmallerNumber(array) {
+//   if (!Array.isArray(array)) {
+//   return "Введене значення не є масив"
+// }
+
+//   let min = array[0];
+
+//   for (const number of array) {
+//     if (min > number)
+//       min = number;
+// }
+//   return min;
+// }
+
+// console.log(findSmallerNumber(numbers));
+// console.log(findSmallerNumber(number));
+
+
+//TODO: ==========================
+// Напишіть if..else, що відповідає наступному switch:
+// const browser = "Opera"
+// switch (browser) {
+//   case 'Edge':
+//     alert( "You've got the Edge!" );
+//     break;
+
+//   case 'Chrome':
+//   case 'Firefox':
+//   case 'Safari':
+//   case 'Opera':
+//     alert( 'Okay we support these browsers too' );
+//     break;
+
+//   default:
+//     alert( 'We hope that this page looks ok!' );
+// }
+
+const browser = "fsfa"
+if (browser === 'Edge') {
+  alert( "You've got the Edge!" );
 }
-
-  let min = array[0];
-
-  for (const number of array) {
-    if (min > number)
-      min = number;
+else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser ===  'Opera') {
+  alert( 'Okay we support these browsers too' );
 }
-  return min;
+else {
+  alert( 'We hope that this page looks ok!' );
 }
-
-console.log(findSmallerNumber(numbers));
-console.log(findSmallerNumber(number));
