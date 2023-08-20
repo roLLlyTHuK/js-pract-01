@@ -39,23 +39,41 @@
 // значення '1', то у змінну result запишемо 'зима', якщо має значення
 // '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
 
-let num = 8;
-let result;
-switch (num) {
-    case 1:
-        result = "зима";
-        break;
-    case 2:
-        result = "весна";
-        break;
-    case 3:
-        result = "літо";
-        break;   
-    case 4:
-        result = "осінь";
-        break; 
-    default:
-        result = "Введіть корректне значення";
-        break;
+// let num = 8;
+// let result;
+// switch (num) {
+//     case 1:
+//         result = "зима";
+//         break;
+//     case 2:
+//         result = "весна";
+//         break;
+//     case 3:
+//         result = "літо";
+//         break;
+//     case 4:
+//         result = "осінь";
+//         break;
+//     default:
+//         result = "Введіть корректне значення";
+//         break;
+// }
+// console.log(result);
+
+// TODO: № 5 на for =====================================================
+//Напишіть цикл, який виводить у консоль
+// числа від max до min за спаданням
+// Додайте усі парні числа від min до max
+
+const max = 10;
+const min = 1;
+let sum = 0;
+
+for (let i = max; i >= min; i -= 1) {
+  //   console.log(i);
+  if (i % 2 === 0) {
+    sum += i;
+    console.log(i);
+  }
 }
-console.log(result);
+console.log(sum);
