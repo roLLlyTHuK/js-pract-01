@@ -11,14 +11,16 @@
 
 // a === 10 ? console.log("Вірно") : console.log("Невірно");
 
-let min = 59;
+let min = 57;
 
-if(min <= 15) {
+if(min >0 && min <= 15) {
     console.log("1 четверть");
 } else if(min <= 30) {
     console.log("2 четверть");
 } else if( min <= 45) {
     console.log("3 четверть");
-} else {
+} else if (min > 45 && min <= 59){
     console.log("4 четверть");
+} else {
+    console.log("Введите корректное значение");
 }
