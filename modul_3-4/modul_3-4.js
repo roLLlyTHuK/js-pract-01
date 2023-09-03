@@ -103,6 +103,19 @@
 
 // const numbers = [1, 1, 1, 2, 3, 4, 7, 7, 6, 6, 5, 4, 23, 22, 22, 111, 1, 5];
 
+// function unicNumbers(arr) {
+//   const newArr = [];
+//   for (const number of arr) {
+//     // if (!arr.includes(number)) {
+//     //   newArr.push(number);
+//     // }
+//     newArr[number] = number;
+//   }
+//   return Object.values(newArr);
+// }
+
+// console.log(unicNumbers(numbers));
+
 //TODO № 6 з колбеком =====================================
 //Напишіть дві функції
 // letMeSeeYourName(callback) - запитує ім'я користувача
@@ -111,10 +124,9 @@
 //Рядок "Привіт <name>"
 //Реалізуй перевірку, що prompt не порожній
 
-
 // function letMeSeeYourName(callback) {
 //     const name = prompt(`What is your name?`);
-//     if (!name) { 
+//     if (!name) {
 //         alert('Please enter your name');
 //         return;
 //     }
@@ -123,6 +135,64 @@
 
 // function greet(name) { //варіант 1
 //     alert(`Привіт, ${name}`);
-// }   
+// }
 //const  greet = name => alert(`Привіт, ${name}`); // варіант 2
 // console.log(letMeSeeYourName(greet));
+
+//TODO № 7 з колбеком ==============================================
+//Напишіть дві функції
+//makeProduct(name, price, callback) - приймає
+//ім'я та ціну товару, а також callback.
+//Функція створює об'єкт товару, додаючи йому унікальний
+//ідентифікатор як id і викликає callback
+//Передаючи йому створений об'єкт.
+//showProduct(product) - коллбек приймаючий об'єкт
+//продукту і логірующий їх у консоль
+
+// function makeProduct(name, price, callback) {
+//   const product = {
+//     name,
+//     price,
+//     id: Math.random(),
+//   };
+//   //   return callback(product); //приходить объект с данными о продукте и возвращает его
+//   return product;
+// }
+
+// console.log(makeProduct("Borsch", 80));
+
+// function showProduct(product) {
+//   return product;
+// }
+
+// console.log(makeProduct("Cake", 250, showProduct));
+// console.log(makeProduct("Fish", 300, showProduct));
+
+//TODO № 8 на замикання ✅ ==============================================
+
+// Напишіть функцію makeShef(shefName), яка повертає функцію
+// makeDish(dish), яка памятає імя щефа піл час її виклику
+// Функція  makeDish має логіровать рядок "<імя шефа> is cooking <dish>"
+
+// function makeShef(shefName) {
+//   return function makeDish(dish) {
+//     console.log(`${shefName} is cooking ${dish}`);
+//   };
+// }
+
+// const ivanCook = makeShef("Ivan");
+// const svetaCook = makeShef("Sveta");
+
+// ivanCook("Fish");
+// ivanCook("Cake");
+// svetaCook("Borsch");
+
+//TODO: № 9 на замикання ✅ ==============================================
+//Напишіть функцію makeCounter, яка повертає іншу
+//функцію, яка вважає та логує кількість своїх викликів
+
+//TODO: № 10 на замикання ✅ ==============================================
+//Напишіть функцію savePassword(password), яка приймає
+//пароль і повертає внутрішню функцію, що приймає
+//рядок і повертає буль true, якщо рядок збігається зі збереженим
+//паролем і false - якщо не збігається
