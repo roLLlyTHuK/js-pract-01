@@ -112,17 +112,17 @@
 //Реалізуй перевірку, що prompt не порожній
 
 
-function letMeSeeYourName(callback) {
-    const name = prompt(`What is your name?`);
-    if (!name) { 
-        alert('Please enter your name');
-        return;
-    }
-    return callback(name);
-}
+// function letMeSeeYourName(callback) {
+//     const name = prompt(`What is your name?`);
+//     if (!name) { 
+//         alert('Please enter your name');
+//         return;
+//     }
+//     return callback(name);
+// }
 
-function greet(name) {
-    alert(`Привіт, ${name}`);
-}   
-
-console.log(letMeSeeYourName(greet));
+// function greet(name) { //варіант 1
+//     alert(`Привіт, ${name}`);
+// }   
+//const  greet = name => alert(`Привіт, ${name}`); // варіант 2
+// console.log(letMeSeeYourName(greet));
