@@ -95,4 +95,34 @@
 //   return obj;
 // }
 
-console.log(multiplyNumeric(menu));
+// console.log(multiplyNumeric(menu));
+
+//TODO: № 5 ==============================================================
+// Напиши функцію яка приймає массив чисел і повертає новий массив,
+// унікальних чисел, які не півторюються
+
+// const numbers = [1, 1, 1, 2, 3, 4, 7, 7, 6, 6, 5, 4, 23, 22, 22, 111, 1, 5];
+
+//TODO № 6 з колбеком =====================================
+//Напишіть дві функції
+// letMeSeeYourName(callback) - запитує ім'я користувача
+//через prompt та викликає callback функцію
+//greet(name) - коллбек, що приймає ім'я і логірує в консоль
+//Рядок "Привіт <name>"
+//Реалізуй перевірку, що prompt не порожній
+
+
+// function letMeSeeYourName(callback) {
+//     const name = prompt(`What is your name?`);
+//     if (!name) { 
+//         alert('Please enter your name');
+//         return;
+//     }
+//     return callback(name);
+// }
+
+// function greet(name) { //варіант 1
+//     alert(`Привіт, ${name}`);
+// }   
+//const  greet = name => alert(`Привіт, ${name}`); // варіант 2
+// console.log(letMeSeeYourName(greet));
