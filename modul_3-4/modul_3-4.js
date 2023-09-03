@@ -14,8 +14,6 @@
 
 // ключ:значення використовуючи Object.keys() і for...of
 
- 
-
 // const user = {
 
 //   name: "John",
@@ -29,7 +27,6 @@
 // };
 
 // user.mood = 'happy';
-
 
 // user.hobby = 'skydiving';
 
@@ -57,3 +54,22 @@
 //   sum += value;
 // }
 // console.log(sum);
+
+//TODO: № 3 ================================================================
+// Потрібно написати функцію, яка приймає 2 параметри key та obj,
+// яка буде перебирати об'єкт
+// Якщо у об'єкта є такий ключ - поверне true
+// Є 2 варіанти рішення, спочатку напишемо функцію,
+// потім вирішимо простим способом
+
+// const obj = {
+//   name: "Igor",
+//   car: "Mercedes",
+//   carColor: "black",
+// };
+
+// function foo(key, obj) {
+//   //   return Object.keys(obj).includes(key); // 1 варіант
+//   return key in obj; // 2 варіант
+// }
+// console.log(foo("car", obj));
