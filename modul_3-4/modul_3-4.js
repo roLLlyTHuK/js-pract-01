@@ -16,26 +16,44 @@
 
  
 
-const user = {
+// const user = {
 
-  name: "John",
+//   name: "John",
 
-  age: 20,
+//   age: 20,
 
-  hobby: "tenis",
+//   hobby: "tenis",
 
-  premium: true,
+//   premium: true,
 
-};
+// };
 
-user.mood = 'happy';
+// user.mood = 'happy';
 
 
-user.hobby = 'skydiving';
+// user.hobby = 'skydiving';
 
-user.premium = false;
-console.log(user);
+// user.premium = false;
+// console.log(user);
 
-for (const key of Object.keys(user)) {
-  console.log(`${key}:${user[key]}`)
-};
+// for (const key of Object.keys(user)) {
+//   console.log(`${key}:${user[key]}`)
+// };
+
+//TODO: № 2 ==============================================================
+//2. У нас есть объект, в котором храняться зарплаты
+//нашей команды
+//Напишите код для сумирования всех зарплат и
+//сохраните его результат в переменной sum.
+//Если объект salaries пуст, то результат должен быть 0
+
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
+// let sum = 0;
+// for (const value of Object.values(salaries)) {
+//   sum += value;
+// }
+// console.log(sum);
