@@ -189,10 +189,39 @@
 
 //TODO: № 9 на замикання ✅ ==============================================
 //Напишіть функцію makeCounter, яка повертає іншу
-//функцію, яка вважає та логує кількість своїх викликів
+//функцію, яка рахує та логує кількість своїх викликів
+
+function makeCounter() {
+    let count = 0;
+    
+    function counter() {
+        count+=1;
+        console.log(`Функція була викликана ${count} разів`);
+        return count;
+    }
+    
+    return counter;
+}
+const counter = makeCounter();
+console.log(counter());  
+console.log(counter());  
+
 
 //TODO: № 10 на замикання ✅ ==============================================
 //Напишіть функцію savePassword(password), яка приймає
 //пароль і повертає внутрішню функцію, що приймає
 //рядок і повертає буль true, якщо рядок збігається зі збереженим
 //паролем і false - якщо не збігається
+
+// function savePassword(password) {
+//     return function truePassword() {
+//         const savePassword = "qwerty";
+//         message = (password === savePassword) ? true : false;
+//         console.log(message);
+//     };
+// }
+// const variantOne = savePassword("qwerty");
+// const variantTwo = savePassword("password");
+
+// variantOne();
+// variantTwo();
