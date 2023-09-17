@@ -191,21 +191,20 @@
 //Напишіть функцію makeCounter, яка повертає іншу
 //функцію, яка рахує та логує кількість своїх викликів
 
-function makeCounter() {
-    let count = 0;
-    
-    function counter() {
-        count+=1;
-        console.log(`Функція була викликана ${count} разів`);
-        return count;
-    }
-    
-    return counter;
-}
-const counter = makeCounter();
-console.log(counter());  
-console.log(counter());  
+// function makeCounter() {
+//     let count = 0;
 
+//     function counter() {
+//         count+=1;
+//         console.log(`Функція була викликана ${count} разів`);
+//         return count;
+//     }
+
+//     return counter;
+// }
+// const counter = makeCounter();
+// console.log(counter());
+// console.log(counter());
 
 //TODO: № 10 на замикання ✅ ==============================================
 //Напишіть функцію savePassword(password), яка приймає
