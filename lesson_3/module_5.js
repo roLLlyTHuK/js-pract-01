@@ -21,15 +21,45 @@
 //TODO: № 3 ==============================================
 //Виправте помилки, щоб код працював
 
-function callAction(action) {
-  action();
-}
+// function callAction(action) {
+//   action();
+// }
 
-const item = {
-  getQuatity() {
-    console.log(this.quantity);
-  },
-  quantity: 5,
-};
+// const item = {
+//   getQuatity() {
+//     console.log(this.quantity);
+//   },
+//   quantity: 5,
+// };
 
-callAction(item.getQuatity.bind(item));
+// callAction(item.getQuatity.bind(item));
+
+//TODO: № 4 ==============================================
+
+// Функція askPassword приймає 2 колбека і викливає 1 іх них в задежності від пароля
+
+// function askPassword(ok, fail) {
+//   let password = prompt("Password? 🤔");
+//   if (password === "admin") ok();
+//   else fail();
+// }
+
+// const user = {
+//   name: "aaa",
+
+//   loginOk() {
+//     alert(`${this.name} logged in`);
+//   },
+
+//   loginFail() {
+//     alert(`${this.name} failed to log in`);
+//   },
+// };
+
+// askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
+
+// Створити обект user з властивістю name і двома методами
+// loginOk() i loginFail()
+// ці методи виводять в консоль повідомлення у форматі
+// "<name> logged in" i "<name> failed to log in" відповідно
+// зроби виклик функції askPassword, привязавши в якості аргуметів методи обекта
