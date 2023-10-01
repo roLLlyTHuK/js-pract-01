@@ -139,3 +139,22 @@
 // function onClickDouble() {
 //   [...list].map((item) => (item.textContent *= 2));
 // }
+
+//TODO: № 6.1 ==============================================
+// Вводимо число у input з id="test" - число
+// При кліку на кнопку, у інпут з id="result" повинен буди квадрат цього числа
+// Зробити перевірку на число, реалізувати за допомогою alert з текстом
+
+const button = document.querySelector("button");
+const inputTest = document.querySelector("#test");
+const inputResult = document.querySelector("#result");
+
+button.addEventListener("click", onclick);
+
+function onclick() {
+    if (isNaN(inputTest.value)) {
+        return alert("Введіть number");
+    }
+
+    inputResult.value = inputTest.value ** 2;
+}
