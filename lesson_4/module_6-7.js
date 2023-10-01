@@ -125,3 +125,17 @@
 //   }
 //   console.log("Click is outside id place");
 // });
+
+//TODO: № 6 ==============================================
+// Натиснувши кнопку "Подвоювати", збільшити значення
+// у кожному елементі списку у 2 рази
+
+// const button = document.querySelector("#double");
+// const list = document.querySelector(".list").children;
+// console.dir(list);
+
+// button.addEventListener("click", onClickDouble);
+
+// function onClickDouble() {
+//   [...list].map((item) => (item.textContent *= 2));
+// }
