@@ -109,3 +109,19 @@
 //             break;
 //     }
 // }
+
+//TODO: № 5 ==============================================
+// Додайде слухач кліку і визначте, коли клік відбувається
+// всередині елемента з id "place" і коли клік припадає поза зоною елемента
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/contains
+
+// const place = document.querySelector("#place");
+
+// window.addEventListener("click", (e) => {
+//   const isClick = place.contains(e.target);
+//   if (isClick) {
+//     console.log("Click is in id place");
+//     return;
+//   }
+//   console.log("Click is outside id place");
+// });
