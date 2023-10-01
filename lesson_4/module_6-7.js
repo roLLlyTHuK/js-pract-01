@@ -139,3 +139,43 @@
 // function onClickDouble() {
 //   [...list].map((item) => (item.textContent *= 2));
 // }
+
+//TODO: № 6.1 ==============================================
+// Вводимо число у input з id="test" - число
+// При кліку на кнопку, у інпут з id="result" повинен буди квадрат цього числа
+// Зробити перевірку на число, реалізувати за допомогою alert з текстом
+
+// const button = document.querySelector("button");
+// const inputTest = document.querySelector("#test");
+// const inputResult = document.querySelector("#result");
+
+// button.addEventListener("click", onclick);
+
+// function onclick() {
+//     if (isNaN(inputTest.value)) {
+//         return alert("Введіть number");
+//     }
+
+//     inputResult.value = inputTest.value ** 2;
+// }
+
+//TODO: № 7.1 ==============================================
+// Напишіть інтерфейс, щоб створити список
+// Для кожного пункту:
+// Запитуйте вміст у користувача за допомогою promt
+// створювати пункт та додавати його до списку
+// процес припиняється коли користувач натискає ESC
+// усі елементи мають створюватись динамічно
+
+/*
+Завдання 7.2
+При натисканні на коло він повинен слідувати за курсором.
+При повторному натисканні він стає в початкове положення.
+https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent
+https://developer.mozilla.org/ru/docs/Web/API/MouseEvent/pageX
+https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY
+*/
+
+// Завдання 15
+// Взяти попереднє завдання з Зоопарком та вивести звірів, їх тип та особливості в DOM.
+// Додати до списку клас animalList.На елемент списку animalElement
