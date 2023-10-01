@@ -149,6 +149,61 @@
 //  Крім того, зоопарк повинен мати метод для додавання тварин до списку та
 // метод для виведення списку всіх тварин у зоопарку.
 
+// class Animal {
+//     constructor(name, species, age) {
+//         this.name = name;
+//         this.species = species;
+//         this.age = age;
+//     }
+
+//     get_info() {
+//         return `Name: ${this.name}, Species: ${this.species}, Age: ${this.age}`;
+//     }
+
+//     feed() {
+//         return `${this.name} is being fed.`;
+//     }
+// }
+
+// class Zoo {
+//     constructor(name) {
+//         this.name = name;
+//         this.animals = [];
+//     }
+
+//     add_animal(animal) {
+//         if (animal instanceof Animal) {
+//             this.animals.push(animal);
+//             return `${animal.name} has been added to ${this.name}'s zoo.`;
+//         } else {
+//             return "Only instances of the Animal class can be added to the zoo.";
+//         }
+//     }
+
+//     list_animals() {
+//         if (this.animals.length > 0) {
+//             const animal_list = this.animals.map(animal => animal.get_info()).join('\n');
+//             return `Animals in ${this.name}'s zoo:\n${animal_list}`;
+//         } else {
+//             return `There are no animals in ${this.name}'s zoo.`;
+//         }
+//     }
+// }
+
+
+// const zoo1 = new Zoo("San Diego Zoo");
+// const lion = new Animal("Simba", "Lion", 5);
+// const elephant = new Animal("Dumbo", "Elephant", 8);
+// const penguin = new Animal("Penny", "Penguin", 3);
+
+// console.log(zoo1.add_animal(lion));
+// console.log(zoo1.add_animal(elephant));
+// console.log(zoo1.add_animal(penguin));
+// console.log(zoo1.list_animals());
+// console.log(lion.feed());
+
+
+
 //TODO: № 6 на class-и =============================================
 //Напиши клас Client який створює об'єкт
 //з ​​властивостями login email
@@ -156,3 +211,41 @@
 //доступ до яких зроби через геттер та сеттер
 // get clientData() має повертати оюект з переліченими властивостями
 // set changeEmail(newEmail) який перезаписує почту користувача
+
+// class Client {
+//     #login;
+//     #email;
+
+//     constructor(login, email) {
+//         this.#login = login;
+//         this.#email = email;
+//     }
+
+//     get login() {
+//         return this.#login;
+//     }
+
+//     set login(newLogin) {
+//         this.#login = newLogin;
+//     }
+
+//     get email() {
+//         return this.#email;
+//     }
+
+//     set email(newEmail) {
+//         this.#email = newEmail;
+//     }
+
+//     get clientData() {
+//         return {
+//             login: this.#login,
+//             email: this.#email
+//         };
+//     }
+// }
+
+// const client1 = new Client("user123", "user123@example.com");
+
+// console.log(client1.clientData); 
+// client1.email = "new.email@example.com"; 
