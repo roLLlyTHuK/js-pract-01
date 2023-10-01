@@ -59,3 +59,53 @@
 //     button.textContent = "Приховати";
 //   }
 // }
+
+//TODO: № 4 ==============================================
+
+// Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" - більше на 10 пікселів.
+
+// const decreaseButton = document.querySelector("#decrease");
+// const increaseButton = document.querySelector("#increase");
+// const square = document.querySelector("#box");
+
+// console.dir(square);
+
+// decreaseButton.addEventListener("click", decreaseClick);
+
+// function decreaseClick() {
+//     const width = square.offsetWidth;
+//     const height = square.offsetHeight;
+//     square.style.width = `${width-10}px`;
+//     square.style.height = `${height-10}px`;
+// }
+
+// increaseButton.addEventListener("click", increaseClick);
+
+// function increaseClick() {
+//     const width = square.offsetWidth;
+//     const height = square.offsetHeight;
+//     square.style.width = `${width+10}px`;
+//     square.style.height = `${height+10}px`;
+// }
+
+// Другий варіант
+// decreaseButton.addEventListener("click", onClick);
+// increaseButton.addEventListener("click", onClick);
+
+// function onClick(event) {
+//     const width = square.offsetWidth;
+//     const height = square.offsetHeight;
+//     const currentButton = event.target.getAttribute("id");
+//     // console.log(currentButton);
+
+//     switch (currentButton) {
+//         case 'decrease':
+//             square.style.width = `${width - 10}px`;
+//             square.style.height = `${height - 10}px`;
+//             break;
+//         case 'increase':
+//             square.style.width = `${width + 10}px`;
+//             square.style.height = `${height + 10}px`;
+//             break;
+//     }
+// }
